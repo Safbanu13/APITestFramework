@@ -1,0 +1,6 @@
+com\qa\Rest\demo\CreateBitlinktest.class
+com\qa\Rest\demo\ExpandBitlinkTest.class
+resources\TestDataBuild.class
+resources\Utils.class
+com\qa\Rest\demo\ShortenLinktest.class
+com\qa\Rest\demo\RetrieveLink.class

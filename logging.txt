@@ -1,0 +1,135 @@
+Request method:	POST
+Request URI:	https://api-ssl.bitly.com/v4/bitlinks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=0fe7ae09be1a9d869066b071f70a0414e8460f13
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "long_url": "https://dev.bitly.com",
+    "domain": "bit.ly",
+    "group_guid": "Bl7b8QuEGAw",
+    "title": "Bitly API Documentation",
+    "tags": [
+        "bitly",
+        "api"
+    ]
+}
+HTTP/1.1 200 OK
+Server: nginx
+Date: Thu, 22 Jul 2021 16:20:20 GMT
+Content-Type: application/json
+Content-Length: 318
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: clear
+
+{
+    "created_at": "2021-07-11T13:04:59+0000",
+    "id": "bitly.is/3r1cJVj",
+    "link": "https://bitly.is/3r1cJVj",
+    "custom_bitlinks": [
+        
+    ],
+    "long_url": "https://dev.bitly.com/",
+    "title": "Bitly API Documentation",
+    "archived": false,
+    "tags": [
+        "bitly",
+        "api"
+    ],
+    "deeplinks": [
+        
+    ],
+    "references": {
+        "group": "https://api-ssl.bitly.com/v4/groups/Bl7b8QuEGAw"
+    }
+}
+Request method:	POST
+Request URI:	https://api-ssl.bitly.com/v4/bitlinks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=0fe7ae09be1a9d869066b071f70a0414e8460f13
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "long_url": "",
+    "domain": "bit.ly",
+    "group_guid": "Bl7b8QuEGAw",
+    "title": "Bitly API Documentation",
+    "tags": [
+        "bitly",
+        "api"
+    ]
+}
+HTTP/1.1 400 Bad Request
+Server: nginx
+Date: Thu, 22 Jul 2021 16:20:21 GMT
+Content-Type: application/json
+Content-Length: 158
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: clear
+
+{
+    "message": "INVALID_ARG_LONG_URL",
+    "resource": "bitlinks",
+    "description": "The value provided is invalid.",
+    "errors": [
+        {
+            "field": "long_url",
+            "error_code": "invalid"
+        }
+    ]
+}
+Request method:	POST
+Request URI:	https://api-ssl.bitly.com/v4/bitlinks
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Authorization=0fe7ae09be1a9d869066b071f70a0414e8460f13
+				Accept=*/*
+				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+HTTP/1.1 422 Unprocessable Entity
+Server: nginx
+Date: Thu, 22 Jul 2021 16:20:21 GMT
+Content-Type: application/json
+Content-Length: 108
+Strict-Transport-Security: max-age=31536000; includeSubDomains
+X-XSS-Protection: 1; mode=blockFilter
+X-Content-Type-Options: nosniff
+X-Frame-Options: DENY
+Content-Security-Policy: default-src 'none
+Via: 1.1 google
+Alt-Svc: clear
+
+{
+    "message": "UNPROCESSABLE_ENTITY",
+    "resource": "bitlinks",
+    "description": "The JSON value provided is invalid."
+}
